@@ -1,0 +1,301 @@
+.body{
+background-color: white;
+
+}
+
+/* estilos.css */
+.navbar {
+    background-image: url(img/NAVE.jpg); /* Cambia el color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Sombra */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.navbar-brand {
+    font-size: 1.8rem; /* Tamaño de la marca */
+    font-weight: bold; /* Negrita */
+    color: #faf9f9; /* Color del texto */
+    letter-spacing: 5px;
+    text-shadow: 0 0 10px rgb(255, 0, 234),
+    0 0 20px rgb(255, 0, 234),
+    0 0 40px rgb(255, 0, 234),
+    0 0 80px rgb(255, 0, 234);
+}
+.navbar-brand:hover{
+    color: rgb(46, 243, 128);
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem; /* Tamaño del texto */
+    color: #080808; /* Color del enlace */
+    padding: 10px 20px; /* Espaciado alrededor del enlace */
+    border-radius: 20px;
+      text-shadow: 0 0 10px black;
+      padding: 10px 20px; /* Espaciado alrededor del enlace */
+      text-decoration: none;
+    border-bottom: 2px solid transparent; /* Borde transparente por defecto */
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(161, 14, 14);
+    border-bottom: 2px solid #050505; 
+}
+
+/* estilos de venta de productos*/
+
+.columnas{
+  display: flex;
+  justify-content: center;
+  
+  
+}
+.card{
+  margin: 10px 10px;
+  box-shadow: 10PX 10PX 15PX rgba(0, 0, 0, 0.349);
+}
+/* Ajuste general para las imágenes dentro de las tarjetas */
+.columnas .card-img-top {
+  border-radius: 8px;  /* Redondear los bordes de las imágenes */
+  object-fit: cover;   /* Asegurar que la imagen mantenga la proporción y no se distorsione */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Añadir sombra a la imagen */
+  margin-bottom: 15px; /* Añadir espacio debajo de la imagen */
+  height: 350px;
+  
+}
+
+/* Si deseas hacer algo específico para otra clase de imágenes */
+.columnas .card-img {
+  border: 2px solid #f0f0f0;  /* Añadir un borde */
+  border-radius: 4px;         /* Borde ligeramente redondeado */
+  transition: transform 0.3s ease; /* Suavizar la animación */
+
+}
+
+/* Efecto hover para las imágenes */
+.columnas .card-img:hover, .columnas .card-img-top:hover {
+  transform: scale(1.05);  /* Agrandar un poco la imagen al pasar el ratón */
+}
+.maquillaje{
+margin: 10px 50px;
+display: flex;
+width:500px;
+height: 500px;
+border-radius: 50px;
+object-fit: cover;
+box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+
+}
+.maquillaje:hover{
+  transform: scale(1.05);  /* Agrandar un poco la imagen al pasar el ratón */
+}
+.padre{
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.527);
+}
+.btn-success {
+  background-color: #b31d09; 
+  color: rgb(245, 242, 242);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-success:hover {
+  background-color: #128C7E; /* Color más oscuro para el hover */
+  transform: scale(1.05);  
+}
+/* login*/
+
+
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/*estilos de footer*/
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 10px;
+}
+
+.footer-section h4 {
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.newsletter input[type="email"] {
+  padding: 8px;
+  margin-right: 10px;
+  width: 70%;
+  border: none;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  padding: 8px 15px;
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.footer-creditos {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+  border-top: 1px solid #666;
+  padding-top: 10px;
+}
+
+/*reponsive*/
+/* Para pantallas pequeñas, oculta los enlaces y muestra un menú hamburguesa */
+@media (max-width: 768px) {
+  
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .menu-toggle {
+    display: block; /* Mostrar el botón de menú */
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+/* Para pantallas medianas en adelante, mostrar el menú completo */
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none; /* Ocultar el botón de menú */
+  }
+
+  .navbar-nav {
+    display: flex;
+  }
+}
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+  .columnas {
+    flex-direction: column; /* Apilar las tarjetas verticalmente */
+    align-items: center;
+  }
+
+  .card {
+    width: 100%; /* Asegurar que las tarjetas ocupen todo el ancho */
+    margin: 10px 0; /* Espacio entre tarjetas */
+    justify-content: center;
+    display: flex;
+  }
+}
+
+/* Para pantallas medianas */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .columnas {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 48%; /* Hacer que las tarjetas ocupen la mitad del ancho */
+  }
+}
+
+/* Para pantallas grandes */
+@media (min-width: 1201px) {
+  .card {
+    width: 30%; /* Tres tarjetas por fila */
+  }
+}
+.card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+.padre{
+  flex-direction: column;
+  justify-content: center;
+}
+.maquillaje {
+  max-width: 90%;
+  height: auto;
+  margin: 10px auto;
+
+}
+}
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+  .login-container {
+    width: 90%; /* Ocupa casi todo el ancho en móviles */
+    margin: 50px auto;
+  }
+}
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+  .btn-success {
+    padding: 15px 30px;
+    font-size: 1.2rem; /* Aumenta un poco el tamaño del texto */
+  }
+}
+
+
+
+
+
+
+

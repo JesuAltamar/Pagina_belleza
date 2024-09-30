@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Natura</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="justify-content-center align-items-center vh-100">
+    <div class="login-container">
+        <h2 class="text-center">Iniciar Sesión</h2>
+        <form id="loginForm" class="p-4">
+            <div class="mb-3">
+                <label for="username" class="form-label">Usuario</label>
+                <input type="text" class="form-control" id="username" placeholder="Ingrese su usuario">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña">
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Ingresar</button>
+        </form>
+        <p class="text-center mt-3" id="loginResult"></p>
+    </div>
+    <script src="login.js"></script>
+<!--footer-->
+
+<footer>
+    <div class="footer-container">
+      <div class="footer-section contact">
+        <h4>Contacto</h4>
+        <p>WhatsApp: <a href="https://wa.me/1234567890">123-456-7890</a></p>
+        <p>Email: <a href="mailto:info@natura.com">info@natura.com</a></p>
+      </div>
+  
+      <div class="footer-section links">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="#perfumeria">Perfumería</a></li>
+          <li><a href="#maquillaje">Maquillaje</a></li>
+          <li><a href="#cabello">Cabello</a></li>
+          <li><a href="#politicas">Políticas de Privacidad</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section newsletter">
+        <h4>Suscríbete</h4>
+        <form action="">
+          <input type="email" placeholder="Ingresa tu email">
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+  
+      <div class="footer-section social">
+        <h4>Síguenos</h4>
+        <a href="#"><img src="icono-facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="icono-instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="icono-twitter.png" alt="Twitter"></a>
+      </div>
+    </div>
+    <p class="footer-creditos">© 2024 Natura. Todos los derechos reservados.</p>
+  </footer>
+  
+</body>
+</html>
